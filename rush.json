@@ -318,6 +318,12 @@
             "packageName": "@buildr/frontend",
             "projectFolder": "frontend",
             "reviewCategory": "production"
+        },
+
+        {
+            "packageName": "@buildr/backend",
+            "projectFolder": "backend",
+            "reviewCategory": "production"
         }
     ]
 }
