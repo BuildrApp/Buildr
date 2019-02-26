@@ -5,6 +5,18 @@
     {
       "name": "bunyan",
       "allowedCategories": [ "production" ]
-    }
+    },
+      {
+          "name": "rimraf",
+          "allowedCategories": [ "production" ]
+      },
+      {
+          "name": "ts-node",
+          "allowedCategories": [ "production" ]
+      },
+      {
+          "name": "typescript",
+          "allowedCategories": [ "production" ]
+      }
   ]
 }
