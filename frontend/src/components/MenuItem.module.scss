@@ -1,0 +1,85 @@
+@import "../config.scss";
+
+.children {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 1.5em;
+}
+
+.item {
+    display: block;
+    position: relative;
+
+    user-select: none;
+
+    transition: height 250ms ease-in-out;
+    overflow: hidden;
+
+    height: calc(2.6em + 3px);
+
+    &.containsItems {
+        &::after {
+            font-family: icomoon;
+            content: "\e907";
+
+            pointer-events: none;
+
+            position: absolute;
+            top: .5em;
+            right: 1em;
+
+            font-size: 1.3em;
+
+            color: white;
+
+            transition: 250ms ease-in-out;
+            transform: rotate(180deg);
+        }
+
+        &.open {
+            border-bottom: 1px solid $grey;
+
+            &::after {
+                transform: rotate(0);
+            }
+        }
+    }
+
+    .icon {
+        font-family: icomoon;
+        content: attr(data-icon);
+
+        margin: 0;
+
+        display: inline-block;
+        padding: 0 .7em 0 0;
+
+        line-height: 1;
+
+        color: white;
+    }
+
+    &[data-notification]::after {
+        content: attr(data-notification);
+        font-size: .7em;
+
+        position: absolute;
+        right: 1em;
+        top: 50%;
+    }
+
+    a {
+        display: block;
+        width: 100%;
+
+        margin: 0;
+        padding: .8em 0 .8em 1.4em;
+
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            background: #fff2;
+        }
+    }
+}

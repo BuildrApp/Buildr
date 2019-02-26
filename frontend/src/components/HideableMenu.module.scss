@@ -1,0 +1,150 @@
+@import "../fonts";
+@import "../config";
+
+.sidebar {
+    background: $grey-xdark;
+
+    width: 15rem;
+
+    transition: 250ms ease-in-out;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content 1fr max-content;
+    overflow: hidden;
+
+    .title {
+        display: inline-block;
+        position: relative;
+
+        padding: .8em 0 .8em 1.2em;
+        background: $primary-xlight;
+
+        color: $primary-dark;
+        text-transform: uppercase;
+
+        font-size: 1.6em;
+        font-family: Montserrat, sans-serif;
+        font-weight: 800;
+        user-select: none;
+
+        width: calc(100% - 1.2em);
+
+        cursor: pointer;
+
+        transition: width 250ms ease-in-out,
+            font-size 250ms ease-in-out,
+            color 250ms ease-in-out;
+
+        &::after {
+            font-family: "icomoon";
+            content: "\e902";
+            display: inline-block;
+
+            position: absolute;
+            right: 1.2em;
+            top: .8em;
+
+            transition: transform 250ms ease-in-out;
+
+            color: $primary-dark;
+        }
+
+        &:hover {
+            background: $primary-light;
+            color: $primary-xdark;
+
+            &::after {
+                color: $primary-xdark;
+            }
+        }
+    }
+
+    .children {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        > :first-child {
+            margin-top: 1em;
+            line-height: unset;
+        }
+    }
+
+    .emptySearch {
+        padding-left: 1em;
+        color: $grey-light;
+        font-style: italic;
+    }
+
+    .search {
+        transition: opacity 250ms ease-in-out;
+        opacity: 1;
+
+        input {
+            border: none;
+            border-bottom: 1px solid $grey-dark;
+
+            background: $grey-xdark;
+            color: white;
+
+            padding: .7em .9em;
+            margin: 0;
+
+            overflow: hidden;
+            transition: opacity 250ms ease-in-out;
+
+            &:hover {
+                border-color: $grey;
+            }
+
+            &:focus {
+                border-color: $grey-light;
+            }
+        }
+
+        div {
+            top: .7em;
+            right: .9em;
+            color: $grey;
+        }
+    }
+
+    .lower {
+        transition: opacity 250ms ease-in-out;
+    }
+
+    &.closed {
+        width: 3.4em;
+
+        .title {
+            color: transparent;
+            font-size: 1em;
+
+            &::after {
+                transform: rotate(180deg);
+                top: calc(.8em + 3px);
+            }
+        }
+
+        .search {
+            pointer-events: none;
+            opacity: 0;
+        }
+
+        li > ul {
+            height: 0;
+            overflow: hidden;
+        }
+
+        ul > li {
+            &::after, a {
+                color: transparent;
+            }
+        }
+
+        .lower {
+            opacity: 0;
+        }
+    }
+}

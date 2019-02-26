@@ -1,0 +1,11 @@
+$primary: #00bfff;
+$primary-xlight: lighten($primary, 25%);
+$primary-light: lighten($primary, 10%);
+$primary-dark: darken($primary, 10%);
+$primary-xdark: darken($primary, 25%);
+
+$grey: #5d6277;
+$grey-xlight: lighten($grey, 25%);
+$grey-light: lighten($grey, 10%);
+$grey-dark: darken($grey, 10%);
+$grey-xdark: darken($grey, 25%);
