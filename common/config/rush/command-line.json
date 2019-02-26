@@ -90,6 +90,14 @@
     //    */
     //   "shellCommand": "node common/scripts/my-global-command.js"
     // }
+      {
+          "commandKind": "bulk",
+          "name": "start",
+          "summary": "Start any development servers",
+          "description": "Runs the npm start command  for all projets",
+          "enableParallelism": true,
+          "ignoreMissingScript": true
+      }
   ],
 
   /**
