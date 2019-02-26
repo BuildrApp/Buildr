@@ -1,0 +1,34 @@
+// DO NOT ADD COMMENTS IN THIS FILE.  They will be lost when the Rush tool resaves it.
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
+  "packages": [
+    {
+      "name": "classnames",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "fuse.js",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "node-sass",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "prop-types",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "react",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "react-dom",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "react-scripts",
+      "allowedCategories": [ "production" ]
+    }
+  ]
+}
