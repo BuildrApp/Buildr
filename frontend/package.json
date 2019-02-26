@@ -1,5 +1,5 @@
 {
-    "name": "buildr-react",
+    "name": "@buildr/frontend",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
