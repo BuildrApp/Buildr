@@ -3,10 +3,15 @@
         "module": "commonjs",
         "target": "es5",
         "sourceMap": true,
+        "outDir": "lib",
+        "noImplicitAny": true,
         "lib": [
             "esnext"
         ]
     },
+    "include": [
+        "src/**/*"
+    ],
     "exclude": [
         "node_modules"
     ]
