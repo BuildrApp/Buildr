@@ -94,9 +94,17 @@
           "commandKind": "bulk",
           "name": "start",
           "summary": "Start any development servers",
-          "description": "Runs the npm start command  for all projets",
+          "description": "Runs the npm start command  for all projects",
           "enableParallelism": true,
           "ignoreMissingScript": true
+      },
+
+      {
+          "commandKind": "bulk",
+          "name": "test",
+          "summary": "Run tests",
+          "description": "Starts test runners in all projects",
+          "enableParallelism": false
       }
   ],
 
