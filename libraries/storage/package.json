@@ -1,0 +1,23 @@
+{
+    "name": "@buildr/storage",
+    "version": "0.1.0",
+    "dependencies": {
+        "@buildr/stringifyable": "^0.1.0",
+        "events": "^3.0.0"
+    },
+    "devDependencies": {
+        "@types/jest": "23.3.14",
+        "@types/events": "^3.0.0",
+        "typescript": "^3.3.3333",
+        "rimraf": "^2.6.3",
+        "jest": "23.6.0",
+        "babel-jest": "23.6.0",
+        "@babel/core": "^7.3.4",
+        "@babel/preset-env": "^7.3.4",
+        "@babel/preset-typescript": "^7.3.3"
+    },
+    "scripts": {
+        "build": "rimraf ./lib/ && tsc",
+        "test": "jest --config jest.config.js"
+    }
+}
