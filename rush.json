@@ -324,6 +324,24 @@
             "packageName": "@buildr/backend",
             "projectFolder": "backend",
             "reviewCategory": "production"
+        },
+
+        {
+            "packageName": "@buildr/socket",
+            "projectFolder": "libraries/socket",
+            "reviewCategory": "production"
+        },
+
+        {
+            "packageName": "@buildr/storage",
+            "projectFolder": "libraries/storage",
+            "reviewCategory": "production"
+        },
+
+        {
+            "packageName": "@buildr/stringifyable",
+            "projectFolder": "libraries/stringifyable",
+            "reviewCategory": "production"
         }
     ]
 }
