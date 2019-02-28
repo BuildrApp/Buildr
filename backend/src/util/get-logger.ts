@@ -1,12 +1,11 @@
-import {existsSync} from "fs";
-import {mkdirsSync} from "fs-extra-promise";
+import {existsSync, mkdirSync} from "fs";
 import * as bunyan from "bunyan";
 import * as createCallsiteRecord from "callsite-record";
 import {renderers} from "callsite-record";
 
 export function getLogger(name: string) {
     // create output directory if it doesn't exist
-    if (!existsSync("logs")) mkdirsSync("logs");
+    if (!existsSync("logs")) mkdirSync("logs");
 
     return bunyan.createLogger({
         name,
