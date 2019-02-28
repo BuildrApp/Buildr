@@ -3,7 +3,23 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
+      "name": "@buildr/socket",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@buildr/stringifyable",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@shelacek/ubjson",
+      "allowedCategories": [ "production" ]
+    },
+    {
       "name": "classnames",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "events",
       "allowedCategories": [ "production" ]
     },
     {
@@ -11,11 +27,11 @@
       "allowedCategories": [ "production" ]
     },
     {
-      "name": "node-sass",
+      "name": "prop-types",
       "allowedCategories": [ "production" ]
     },
     {
-      "name": "prop-types",
+      "name": "randomstring",
       "allowedCategories": [ "production" ]
     },
     {
@@ -29,6 +45,6 @@
     {
       "name": "react-scripts",
       "allowedCategories": [ "production" ]
-    }
+    },
   ]
 }
