@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import HideableMenu from "./components/HideableMenu";
 import styles from './App.module.scss';
-import {generateLink, getCurrentPage} from "./lib/serviceWorkerHelpers";
+import {generateLink, getCurrentPage} from "./util/serviceWorkerHelpers";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Badge from "./components/Badge";
 

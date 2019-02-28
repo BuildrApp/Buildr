@@ -1,6 +1,6 @@
 import React from 'react';
-import Controller from "../lib/Controller";
-import {generateLink} from "../lib/serviceWorkerHelpers";
+import Controller from "../util/Controller";
+import {generateLink} from "../util/serviceWorkerHelpers";
 
 const errorMessages = {
     400: ["User error", "Make sure the URL is correct."],

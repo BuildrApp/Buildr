@@ -1,5 +1,5 @@
 import React from 'react';
-import Controller from "../lib/Controller";
+import Controller from "../util/Controller";
 import MultiColumn, {Column} from "../components/MultiColumn";
 import RepositoryInfo from "../components/RepositoryInfo";
 

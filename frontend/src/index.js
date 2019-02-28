@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {initUrl} from "./lib/serviceWorkerHelpers";
+import {initUrl} from "./util/serviceWorkerHelpers";
 
 initUrl();
 ReactDOM.render(<App appName="Buildr" />, document.getElementById('root'));
